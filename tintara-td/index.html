@@ -3,52 +3,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1ae0c7">
   <title>Tintara: Tower Defense</title>
-  <meta name="description" content="Tintara: Tower Defense is a 3D tower defense game where the towers run on Lumen, one glowing liquid, and each fires its own energy. Privacy policy, terms and support.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Tintara: Tower Defense is a 3D tower defense game where every tower runs on Lumen, one glowing liquid from a shared glass tank. Coming to Android.">
+  <link rel="preload" href="../assets/fonts/LilitaOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/site.js" defer></script>
 </head>
 <body>
-  <header>
-    <a class="brand" href="index.html">Tintara: Tower Defense</a>
-    <nav>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="brand" href="../"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#fff"/><path d="M2 16a14 14 0 0 1 28 0z" fill="#ff8a00"/><rect x="2" y="15" width="28" height="2" fill="#2a1442"/><circle cx="16" cy="16" r="14" fill="none" stroke="#2a1442" stroke-width="2"/></svg>Roshelos gaming studio</a>
+    <nav aria-label="Site">
+      <a href="./" aria-current="page">Tintara</a>
       <a href="privacy.html">Privacy policy</a>
       <a href="terms.html">Terms of service</a>
     </nav>
   </header>
-
-  <main>
-    <img class="logo" src="logo.png" width="1024" height="384" alt="Tintara: Tower Defense">
-    <h1>Towers that run on Lumen</h1>
-    <p>Tintara: Tower Defense is a 3D tower defense game for Android. Jelly-and-glass aliens called Siphons march on your
-    Main Building, and every tower draws Lumen from one shared glass tank and fires its own energy. Watch the tank drain, call
-    the drone to refill it, and mix energies to burn, freeze and shock the Siphons.</p>
-
-    <div class="draft">
-      <strong>Draft pages.</strong> The privacy policy and terms on this site are drafts written for the game's
-      planned soft launch. They have not been reviewed by a lawyer and must be reviewed by the owner before the game is
-      published.
+  <div class="stage" data-stage>
+    <div class="dome-col">
+      <div class="dome-wrap" role="img" aria-label="A glass tank of Lumen, the liquid the towers run on">
+        <svg class="drone" viewBox="0 0 74 40" aria-hidden="true"><ellipse cx="14" cy="6" rx="13" ry="3" fill="#2a1442"/><ellipse cx="60" cy="6" rx="13" ry="3" fill="#2a1442"/><rect x="12" y="6" width="3" height="8" fill="#2a1442"/><rect x="59" y="6" width="3" height="8" fill="#2a1442"/><rect x="8" y="13" width="58" height="18" rx="9" fill="#2a1442"/><rect x="26" y="18" width="22" height="8" rx="4" fill="#ff8a00"/><rect x="32" y="31" width="10" height="7" rx="2" fill="#ff8a00"/></svg>
+        <div class="pour"></div>
+        <div class="dome-glass">
+          <div class="dome-capsules"><i class="cap"></i><i class="cap"></i><i class="cap"></i><i class="cap"></i><i class="cap"></i></div>
+          <div class="dome-fill"><i class="bubble"></i><i class="bubble"></i><i class="bubble"></i><i class="bubble"></i></div>
+          <div class="dome-shine"></div>
+        </div>
+        <div class="plinth on-ink"><span class="label">Lumen</span><span class="digits" data-digits>100</span></div>
+      </div>
     </div>
+    <main id="main" class="panel-col">
+      <section class="hero">
+        <h1 class="logo"><img src="../assets/img/logo.png" width="1024" height="384" alt="Tintara: Tower Defense"></h1>
+        <p class="tagline">Towers that run on Lumen</p>
+        <p class="lede">A 3D tower defense game for Android. Jelly-and-glass aliens called Siphons march on your Main Building, and every tower runs on Lumen, the glowing liquid in one shared glass tank. Watch the tank drain.</p>
+        <div class="actions">
+          <div class="coin"><span class="slot" aria-hidden="true"></span><span><strong>Coming to Android</strong><small>Not released yet. No date announced.</small></span></div>
+          <a class="btn" href="#how">How it plays <svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </section>
 
-    <div class="card">
-      <h2 style="margin-top:0">Policies</h2>
-      <ul>
-        <li><a href="privacy.html">Privacy policy</a>: what the game collects, why, and how to ask for deletion.</li>
-        <li><a href="terms.html">Terms of service</a>: the rules for playing and for purchases.</li>
-      </ul>
+      <section class="how" id="how" aria-labelledby="how-h">
+        <h2 id="how-h">How it plays</h2>
+        <ol class="steps">
+          <li class="step step--wide" data-drain-from>
+            <h3>Siphons march on your Main Building</h3>
+            <p>They are translucent aliens that crave raw Lumen, and they walk the path straight toward the Main Building.</p>
+            <figure class="window"><span class="no" aria-hidden="true">1</span><img src="../assets/img/siphons.jpg" width="1400" height="788" loading="lazy" alt="Siphons, among them a crab, a toad, a moth and an armoured bear, standing on a sandy path in a canyon."><figcaption>Siphons, from a Level 1 capture.</figcaption></figure>
+          </li>
+          <li class="step step--side">
+            <figure class="window"><span class="no" aria-hidden="true">2</span><img src="../assets/img/building.jpg" width="380" height="380" loading="lazy" alt="The Main Building: a stone and metal block with a glass tank of Lumen on top."><figcaption>The Main Building and its glass tank.</figcaption></figure>
+            <div>
+              <h3>One tank feeds every tower</h3>
+              <p>The Main Building holds the Lumen and converts it into the energy each gun fires. Nothing fires without it.</p>
+            </div>
+          </li>
+          <li class="step step--wide">
+            <h3>Mix energies</h3>
+            <p>Each tower has its own pipe from the Main Building and carries one energy. Mix energies to burn, freeze and shock the Siphons.</p>
+            <figure class="window"><span class="no" aria-hidden="true">3</span><img src="../assets/img/map.jpg" width="1400" height="788" loading="lazy" alt="A Level 1 map from above: a winding sand path, build pads, and coloured pipes running from the Main Building."><figcaption>Level 1: the path, the build pads and each tower's pipe.</figcaption></figure>
+          </li>
+          <li class="step step--drone" data-drain-to>
+            <span class="no" aria-hidden="true">4</span>
+            <h3>Call the drone</h3>
+            <p>Every shot drains the tank. When it runs low, call the drone to pour in more Lumen. The tank beside this page does the same as you read.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="policies" aria-labelledby="pol-h">
+        <div class="tray on-ink">
+        <h2 id="pol-h">Policies and support</h2>
+        <p>What Tintara collects and why, how to ask for deletion, and the rules for playing and for purchases.</p>
+        <div class="links">
+          <a class="btn" href="privacy.html">Privacy policy <svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn" href="terms.html">Terms of service <svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <p>Questions, bug reports, purchase problems or data deletion requests: <a href="mailto:tintara.support@gmail.com">tintara.support@gmail.com</a></p>
+        <small>Both documents are drafts and have not been reviewed by a lawyer.</small>
+      </div>
+      </section>
+    </main>
+  </div>
+  <footer class="foot on-ink">
+    <div class="foot-in">
+      <span>Roshelos gaming studio. Tintara: Tower Defense is for players aged 13 and over.</span>
+      <nav aria-label="Policies"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></nav>
     </div>
-
-    <div class="card">
-      <h2 style="margin-top:0">Support</h2>
-      <p>Questions, bug reports, purchase problems or data deletion requests:
-      <a href="mailto:support@example.com">support@example.com</a>
-      <span class="muted">(placeholder address: replace before launch)</span>.</p>
-    </div>
-
-    <p class="muted">Tintara: Tower Defense is for players aged 13 and over.</p>
-  </main>
-
-  <footer>
-    <p>Draft, last updated October 2026.</p>
   </footer>
 </body>
 </html>

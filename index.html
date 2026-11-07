@@ -3,25 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1ae0c7">
   <title>Roshelos gaming studio</title>
-  <meta name="description" content="Roshelos gaming studio: games, privacy policies and terms.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Roshelos gaming studio makes games. Home of Tintara: Tower Defense, with its privacy policy and terms.">
+  <link rel="preload" href="assets/fonts/LilitaOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
 </head>
-<body>
-  <header>
-    <a class="brand" href="index.html">Roshelos gaming studio</a>
+<body class="home">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="brand" href="./"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#fff"/><path d="M2 16a14 14 0 0 1 28 0z" fill="#ff8a00"/><rect x="2" y="15" width="28" height="2" fill="#2a1442"/><circle cx="16" cy="16" r="14" fill="none" stroke="#2a1442" stroke-width="2"/></svg>Roshelos gaming studio</a>
+    <nav aria-label="Site">
+      <a href="tintara-td/">Tintara</a>
+      <a href="tintara-td/privacy.html">Privacy policy</a>
+      <a href="tintara-td/terms.html">Terms of service</a>
+    </nav>
   </header>
-  <main>
-    <h1>Games</h1>
-    <div class="card">
-      <h2 style="margin-top:0"><a href="tintara-td/">Tintara: Tower Defense</a></h2>
-      <p>A 3D tower defense game where the towers run on liquid color.</p>
-      <ul>
-        <li><a href="tintara-td/">Game page</a></li>
-        <li><a href="tintara-td/privacy.html">Privacy policy</a></li>
-        <li><a href="tintara-td/terms.html">Terms of service</a></li>
-      </ul>
+  <div class="stage" data-stage data-idle>
+    <div class="dome-col">
+      <div class="dome-wrap" role="img" aria-label="A glass tank of Lumen, the liquid the towers run on">
+        <svg class="drone" viewBox="0 0 74 40" aria-hidden="true"><ellipse cx="14" cy="6" rx="13" ry="3" fill="#2a1442"/><ellipse cx="60" cy="6" rx="13" ry="3" fill="#2a1442"/><rect x="12" y="6" width="3" height="8" fill="#2a1442"/><rect x="59" y="6" width="3" height="8" fill="#2a1442"/><rect x="8" y="13" width="58" height="18" rx="9" fill="#2a1442"/><rect x="26" y="18" width="22" height="8" rx="4" fill="#ff8a00"/><rect x="32" y="31" width="10" height="7" rx="2" fill="#ff8a00"/></svg>
+        <div class="pour"></div>
+        <div class="dome-glass">
+          <div class="dome-capsules"><i class="cap"></i><i class="cap"></i><i class="cap"></i><i class="cap"></i><i class="cap"></i></div>
+          <div class="dome-fill"><i class="bubble"></i><i class="bubble"></i><i class="bubble"></i><i class="bubble"></i></div>
+          <div class="dome-shine"></div>
+        </div>
+        <div class="plinth on-ink"><span class="label">Lumen</span><span class="digits" data-digits>100</span></div>
+      </div>
     </div>
-  </main>
+    <main id="main" class="panel-col">
+      <section>
+        <h1>Roshelos gaming studio</h1>
+        <p class="lede">We make games. One so far.</p>
+        <figure class="window home-shot"><img src="assets/img/siphons.jpg" width="1400" height="788" alt="Siphons from Tintara: Tower Defense walking a sandy path in a canyon."><figcaption>Tintara: Tower Defense, a Level 1 capture.</figcaption></figure>
+        <a class="capsule-link" href="tintara-td/">
+          <span class="shell"><strong>Tintara: Tower Defense</strong><span>A 3D tower defense game where every tower runs on Lumen, one glowing liquid.</span></span>
+          <span class="cap-end"><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </section>
+      <section class="home-pol" aria-label="Support">
+        <p>Support for every game: <a href="mailto:tintara.support@gmail.com">tintara.support@gmail.com</a></p>
+      </section>
+    </main>
+  </div>
+  <footer class="foot on-ink">
+    <div class="foot-in">
+      <span>Roshelos gaming studio. Tintara: Tower Defense is for players aged 13 and over.</span>
+      <nav aria-label="Policies"><a href="tintara-td/privacy.html">Privacy policy</a><a href="tintara-td/terms.html">Terms of service</a></nav>
+    </div>
+  </footer>
 </body>
 </html>

@@ -3,39 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy - Tintara: Tower Defense</title>
-  <meta name="description" content="What Tintara: Tower Defense collects, why, who receives it, and how to delete your data.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#1ae0c7">
+  <title>Privacy Policy | Tintara: Tower Defense</title>
+  <meta name="description" content="Privacy Policy of Tintara: Tower Defense by Roshelos gaming studio (draft).">
+  <link rel="preload" href="../assets/fonts/LilitaOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/site.js" defer></script>
 </head>
 <body>
-  <header>
-    <a class="brand" href="index.html">Tintara: Tower Defense</a>
-    <nav>
-      <a href="privacy.html">Privacy policy</a>
+  <a class="skip" href="#main">Skip to the document</a>
+  <header class="bar">
+    <a class="brand" href="../"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#fff"/><path d="M2 16a14 14 0 0 1 28 0z" fill="#ff8a00"/><rect x="2" y="15" width="28" height="2" fill="#2a1442"/><circle cx="16" cy="16" r="14" fill="none" stroke="#2a1442" stroke-width="2"/></svg>Roshelos gaming studio</a>
+    <nav aria-label="Site">
+      <a href="./">Tintara</a>
+      <a href="privacy.html" aria-current="page">Privacy policy</a>
       <a href="terms.html">Terms of service</a>
     </nav>
   </header>
 
-  <main>
+  <div class="doc-head">
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: November 2026 (draft)</p>
+    <p>Tintara: Tower Defense. Last updated: November 2026 (draft)</p>
+  </div>
 
-    <div class="draft">
+  <div class="doc" data-doc>
+    <aside class="rail" aria-label="Contents">
+      <details class="toc" id="toc" open>
+        <summary>On this page <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+        <nav><ol>
+          <li><a href="#who-we-are">1. Who we are</a></li>
+          <li><a href="#what-we-collect">2. What we collect</a></li>
+          <li><a href="#advertising-and-consent">3. Advertising and consent</a></li>
+          <li><a href="#how-we-use-information">4. How we use information</a></li>
+          <li><a href="#we-do-not-sell-personal-data">5. We do not sell personal data</a></li>
+          <li><a href="#who-else-receives-information">6. Who else receives information</a></li>
+          <li><a href="#international-transfers">7. International transfers</a></li>
+          <li><a href="#how-long-we-keep-it">8. How long we keep it</a></li>
+          <li><a href="#your-choices-and-rights">9. Your choices and rights</a></li>
+          <li><a href="#deleting-your-data">10. Deleting your data</a></li>
+          <li><a href="#children">11. Children</a></li>
+          <li><a href="#security">12. Security</a></li>
+          <li><a href="#changes-to-this-policy">13. Changes to this policy</a></li>
+          <li><a href="#contact">14. Contact</a></li>
+        </ol></nav>
+      </details>
+      <div class="tube" aria-hidden="true"><i></i></div>
+    </aside>
+
+    <main id="main" class="paper">
+      <div class="draft">
       <strong>DRAFT: needs the owner's legal review before publication.</strong> This text describes how the game is
       planned to work at its Android soft launch. It is not legal advice and has not been reviewed by a lawyer. Replace
-      the placeholders (support email, company name, address, governing law), check every statement against the
+      the placeholders (company name, address, governing law), check every statement against the
       shipped build, and have it reviewed before you link it from the store listing or the game.
     </div>
-
     <p>This policy explains what information <strong>Tintara: Tower Defense</strong> ("the game", "we") collects, how it
     is used, who it is shared with, and the choices you have. The game is for players aged <strong>13 and over</strong>.
     We do not knowingly collect information from children under 13.</p>
 
-    <h2>1. Who we are</h2>
+    <h2 id="who-we-are">1. Who we are</h2>
     <p>The game is published by Roshelos gaming studio. Contact us about privacy at
-    <a href="mailto:support@example.com">support@example.com</a> (placeholder address).</p>
+    <a href="mailto:tintara.support@gmail.com">tintara.support@gmail.com</a>.</p>
 
-    <h2>2. What we collect</h2>
+    <h2 id="what-we-collect">2. What we collect</h2>
     <p>We do not ask you to create an account, and we do not ask for your real name, address, phone number, contact list,
     photos or location. The game collects only the following.</p>
 
@@ -43,62 +73,62 @@
     <table>
       <tr><th>Information</th><th>Why</th><th>Who handles it</th></tr>
       <tr>
-        <td><strong>Gameplay analytics:</strong> events such as level started, won, lost or quit, the wave reached, store
+        <td data-label="Information"><strong>Gameplay analytics:</strong> events such as level started, won, lost or quit, the wave reached, store
         views and purchases, Rewarded Bonus offers and views, tutorial steps; a random app-instance ID; device model,
         operating system version, language, approximate region (from IP address, which is not stored by us) and app
         version.</td>
-        <td>To understand where players get stuck, fix balance problems and measure whether the game is fun.</td>
-        <td>Google Firebase Analytics</td>
+        <td data-label="Why">To understand where players get stuck, fix balance problems and measure whether the game is fun.</td>
+        <td data-label="Who handles it">Google Firebase Analytics</td>
       </tr>
       <tr>
-        <td><strong>Crash reports:</strong> the stack trace, device model, operating system version, free memory and
+        <td data-label="Information"><strong>Crash reports:</strong> the stack trace, device model, operating system version, free memory and
         storage, and the app state at the time of a crash; a random installation ID.</td>
-        <td>To find and fix crashes.</td>
-        <td>Google Firebase Crashlytics</td>
+        <td data-label="Why">To find and fix crashes.</td>
+        <td data-label="Who handles it">Google Firebase Crashlytics</td>
       </tr>
       <tr>
-        <td><strong>Remote configuration:</strong> the app-instance ID and app version, to deliver tuning values.</td>
-        <td>To adjust game balance without an update.</td>
-        <td>Google Firebase Remote Config</td>
+        <td data-label="Information"><strong>Remote configuration:</strong> the app-instance ID and app version, to deliver tuning values.</td>
+        <td data-label="Why">To adjust game balance without an update.</td>
+        <td data-label="Who handles it">Google Firebase Remote Config</td>
       </tr>
       <tr>
-        <td><strong>Advertising data</strong> (only when you choose to watch a Rewarded Bonus ad): your device's
+        <td data-label="Information"><strong>Advertising data</strong> (only when you choose to watch a Rewarded Bonus ad): your device's
         advertising ID, IP address, device and operating system details, and ad interactions (requested, shown,
         completed).</td>
-        <td>To show you a rewarded ad, pay for it, measure it and prevent fraud.</td>
-        <td>AppLovin MAX and the ad networks it mediates between</td>
+        <td data-label="Why">To show you a rewarded ad, pay for it, measure it and prevent fraud.</td>
+        <td data-label="Who handles it">AppLovin MAX and the ad networks it mediates between</td>
       </tr>
       <tr>
-        <td><strong>Google Play Games data:</strong> if you sign in, your Play Games player ID and display name, your cloud
+        <td data-label="Information"><strong>Google Play Games data:</strong> if you sign in, your Play Games player ID and display name, your cloud
         save and your achievements.</td>
-        <td>To keep your progress when you change phone and to unlock achievements.</td>
-        <td>Google Play Games services</td>
+        <td data-label="Why">To keep your progress when you change phone and to unlock achievements.</td>
+        <td data-label="Who handles it">Google Play Games services</td>
       </tr>
       <tr>
-        <td><strong>Game account (only after Play Games sign-in):</strong> a Firebase user ID linked to your Play Games
+        <td data-label="Information"><strong>Game account (only after Play Games sign-in):</strong> a Firebase user ID linked to your Play Games
         account, and a small profile: the app version, platform (Android or iOS), the game's language, and when the
         account was first and last used. No name and no email. Not written while "Share usage data" is off.</td>
-        <td>To give each signed-in player one account that later features (for example moving progress between phones)
+        <td data-label="Why">To give each signed-in player one account that later features (for example moving progress between phones)
         can use.</td>
-        <td>Google Firebase Authentication and Cloud Firestore</td>
+        <td data-label="Who handles it">Google Firebase Authentication and Cloud Firestore</td>
       </tr>
       <tr>
-        <td><strong>Weekly leaderboards (Endless mode):</strong> a random player ID created on first start, your Endless
+        <td data-label="Information"><strong>Weekly leaderboards (Endless mode):</strong> a random player ID created on first start, your Endless
         scores, and your profile name and Avatar, which are shown next to your score.</td>
-        <td>To rank Endless runs each week, show the boards and award the week-end Crystals.</td>
-        <td>Unity Gaming Services (Authentication and Leaderboards)</td>
+        <td data-label="Why">To rank Endless runs each week, show the boards and award the week-end Crystals.</td>
+        <td data-label="Who handles it">Unity Gaming Services (Authentication and Leaderboards)</td>
       </tr>
       <tr>
-        <td><strong>Purchase information:</strong> what you bought, a purchase receipt or token and the time. We never see
+        <td data-label="Information"><strong>Purchase information:</strong> what you bought, a purchase receipt or token and the time. We never see
         your payment card or payment details.</td>
-        <td>To give you what you bought, restore it, and prevent fraud.</td>
-        <td>Google Play Billing (through Unity IAP)</td>
+        <td data-label="Why">To give you what you bought, restore it, and prevent fraud.</td>
+        <td data-label="Who handles it">Google Play Billing (through Unity IAP)</td>
       </tr>
       <tr>
-        <td><strong>Game progress stored on your device:</strong> stars, Crystals, upgrades, settings and your profile
+        <td data-label="Information"><strong>Game progress stored on your device:</strong> stars, Crystals, upgrades, settings and your profile
         name. It is encrypted on the device.</td>
-        <td>To save and resume your game.</td>
-        <td>Stays on your device, plus Google Play Games cloud save if you sign in</td>
+        <td data-label="Why">To save and resume your game.</td>
+        <td data-label="Who handles it">Stays on your device, plus Google Play Games cloud save if you sign in</td>
       </tr>
     </table>
     </div>
@@ -107,7 +137,7 @@
     stored with your save. Other players see it, with your Avatar, on the weekly leaderboards when you post an Endless
     score. Please do not put personal information in it.</p>
 
-    <h2>3. Advertising and consent</h2>
+    <h2 id="advertising-and-consent">3. Advertising and consent</h2>
     <p>The game shows <strong>only rewarded ads, and only when you choose to watch one</strong> (for example to double
     the Crystals from a win, to get a Second Chance, or to double a Supply Drop). There are no interstitial or banner ads.
     Owning the Supporter Pass gives you every Rewarded Bonus without watching an ad.</p>
@@ -116,7 +146,7 @@
     <strong>Settings &gt; Privacy and consent</strong>. You can also limit ad personalization in your Android settings
     (Settings &gt; Google &gt; Ads) and reset or delete your advertising ID there.</p>
 
-    <h2>4. How we use information</h2>
+    <h2 id="how-we-use-information">4. How we use information</h2>
     <ul>
       <li>To run the game, save your progress and deliver purchases and rewards.</li>
       <li>To fix bugs and crashes and to improve balance and design.</li>
@@ -126,13 +156,13 @@
     <p>We do not use your information to profile you for any purpose beyond these, and we do not make decisions about you
     by automated means that have legal or similarly significant effects.</p>
 
-    <h2>5. We do not sell personal data</h2>
+    <h2 id="we-do-not-sell-personal-data">5. We do not sell personal data</h2>
     <p>We do not sell your personal information for money. Advertising networks used for rewarded ads receive the
     advertising data described above in order to serve and measure the ad; where laws such as the California Consumer
     Privacy Act treat that as "sharing" for advertising, you can opt out through <strong>Settings &gt; Privacy and
     consent</strong> or your device's advertising settings.</p>
 
-    <h2>6. Who else receives information</h2>
+    <h2 id="who-else-receives-information">6. Who else receives information</h2>
     <p>Only the service providers named above (Google for Firebase, Play Games and Google Play Billing; AppLovin and
     its ad network partners for rewarded ads; Unity for the in-app purchase library and the weekly leaderboards), who
     process it for us under their
@@ -141,18 +171,18 @@
     <a href="https://www.applovin.com/privacy/">applovin.com/privacy</a> and
     <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a>.</p>
 
-    <h2>7. International transfers</h2>
+    <h2 id="international-transfers">7. International transfers</h2>
     <p>Our providers may process information in countries other than yours, including the United States. Where required
     they rely on safeguards such as standard contractual clauses.</p>
 
-    <h2>8. How long we keep it</h2>
+    <h2 id="how-long-we-keep-it">8. How long we keep it</h2>
     <p>Firebase Analytics event data is kept for 14 months (the setting we use) and Crashlytics data for 90 days.
     Advertising data is kept by the ad providers under their own policies. Your Play Games cloud save is kept until you
     delete it. Your game account profile is kept until you ask us to delete it. Leaderboard scores are kept for the
     week's board and its results. <em>[Confirm how long Unity keeps past weeks.]</em> Data stored on your device is removed when you uninstall the game. <em>[Confirm these periods against the
     shipped Firebase configuration.]</em></p>
 
-    <h2>9. Your choices and rights</h2>
+    <h2 id="your-choices-and-rights">9. Your choices and rights</h2>
     <ul>
       <li><strong>Consent and ads:</strong> change your choice in <strong>Settings &gt; Privacy and consent</strong>.</li>
       <li><strong>Analytics:</strong> you can turn analytics collection off in <strong>Settings &gt; Privacy and consent</strong>.</li>
@@ -162,10 +192,10 @@
       protection authority. Email us and we will respond within the time the law requires.</li>
     </ul>
 
-    <h2>10. Deleting your data</h2>
+    <h2 id="deleting-your-data">10. Deleting your data</h2>
     <p>To delete the data we hold about you:</p>
     <ol>
-      <li><strong>Email</strong> <a href="mailto:support@example.com">support@example.com</a> (placeholder) with the subject
+      <li><strong>Email</strong> <a href="mailto:tintara.support@gmail.com">tintara.support@gmail.com</a> with the subject
       "Delete my data". Include the app-instance ID shown in <strong>Settings &gt; Privacy and consent</strong> (so we can
       find your analytics and crash records) and, if you use it, your Google Play Games player name. We will delete
       the analytics, crash and configuration records linked to that ID, your game account and its profile, and your
@@ -178,25 +208,33 @@
     <p>Purchase records are kept by Google Play and, where we must keep them for accounting or legal reasons, for as long
     as the law requires.</p>
 
-    <h2>11. Children</h2>
+    <h2 id="children">11. Children</h2>
     <p>The game is intended for players aged 13 and over and is not directed to children under 13. If you believe a child
     under 13 has given us information, email us and we will delete it.</p>
 
-    <h2>12. Security</h2>
+    <h2 id="security">12. Security</h2>
     <p>Game saves on your device are encrypted and signed to detect tampering, and our providers protect data in transit.
     No system is perfectly secure, so we cannot guarantee absolute security.</p>
 
-    <h2>13. Changes to this policy</h2>
+    <h2 id="changes-to-this-policy">13. Changes to this policy</h2>
     <p>We may update this policy. The date at the top shows the latest version, and we will tell you in the game or the
     store listing about important changes.</p>
 
-    <h2>14. Contact</h2>
-    <p><a href="mailto:support@example.com">support@example.com</a> (placeholder address).
+    <h2 id="contact">14. Contact</h2>
+    <p><a href="mailto:tintara.support@gmail.com">tintara.support@gmail.com</a>.
     <em>[Postal address and, if required, an EU/UK representative or data protection officer.]</em></p>
-  </main>
+  
+      <p class="muted">Also read the <a href="terms.html">Terms of service</a>.</p>
+    </main>
+  </div>
 
-  <footer>
-    <p>Draft, last updated November 2026. <a href="index.html">Home</a> | <a href="terms.html">Terms of service</a></p>
+  <a class="to-toc" href="#toc">Contents</a>
+
+  <footer class="foot on-ink">
+    <div class="foot-in">
+      <span>Roshelos gaming studio. Tintara: Tower Defense is for players aged 13 and over.</span>
+      <nav aria-label="Policies"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></nav>
+    </div>
   </footer>
 </body>
 </html>
