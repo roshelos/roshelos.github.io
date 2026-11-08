@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1ae0c7">
+  <meta name="theme-color" content="#0b1020">
   <title>Tintara: Tower Defense</title>
   <meta name="description" content="Tintara: Tower Defense is a 3D tower defense game where every tower runs on Lumen, one glowing liquid from a shared glass tank. Coming to Android.">
-  <link rel="preload" href="../assets/fonts/LilitaOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/Outfit.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/site.css">
   <script src="../assets/site.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="bar">
-    <a class="brand" href="../"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#fff"/><path d="M2 16a14 14 0 0 1 28 0z" fill="#ff8a00"/><rect x="2" y="15" width="28" height="2" fill="#2a1442"/><circle cx="16" cy="16" r="14" fill="none" stroke="#2a1442" stroke-width="2"/></svg>Roshelos gaming studio</a>
+    <a class="brand" href="../"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#2fe3cf" stroke-width="2.5"/><path d="M16 7c4 5 6.5 8.4 6.5 11.5a6.5 6.5 0 0 1-13 0C9.5 15.4 12 12 16 7z" fill="#2fe3cf"/></svg>Roshelos gaming studio</a>
     <nav aria-label="Site">
       <a href="./" aria-current="page">Tintara</a>
+      <a href="#worlds">Worlds</a>
       <a href="privacy.html">Privacy policy</a>
       <a href="terms.html">Terms of service</a>
     </nav>
@@ -23,10 +24,9 @@
   <div class="stage" data-stage>
     <div class="dome-col">
       <div class="dome-wrap" role="img" aria-label="A glass tank of Lumen, the liquid the towers run on">
-        <svg class="drone" viewBox="0 0 74 40" aria-hidden="true"><ellipse cx="14" cy="6" rx="13" ry="3" fill="#2a1442"/><ellipse cx="60" cy="6" rx="13" ry="3" fill="#2a1442"/><rect x="12" y="6" width="3" height="8" fill="#2a1442"/><rect x="59" y="6" width="3" height="8" fill="#2a1442"/><rect x="8" y="13" width="58" height="18" rx="9" fill="#2a1442"/><rect x="26" y="18" width="22" height="8" rx="4" fill="#ff8a00"/><rect x="32" y="31" width="10" height="7" rx="2" fill="#ff8a00"/></svg>
+        <svg class="drone" viewBox="0 0 74 40" aria-hidden="true"><ellipse cx="14" cy="6" rx="13" ry="3" fill="#c9d4e6"/><ellipse cx="60" cy="6" rx="13" ry="3" fill="#c9d4e6"/><rect x="12" y="6" width="3" height="8" fill="#c9d4e6"/><rect x="59" y="6" width="3" height="8" fill="#c9d4e6"/><rect x="8" y="13" width="58" height="18" rx="9" fill="#c9d4e6"/><rect x="26" y="18" width="22" height="8" rx="4" fill="#2fe3cf"/><rect x="32" y="31" width="10" height="7" rx="2" fill="#2fe3cf"/></svg>
         <div class="pour"></div>
         <div class="dome-glass">
-          <div class="dome-capsules"><i class="cap"></i><i class="cap"></i><i class="cap"></i><i class="cap"></i><i class="cap"></i></div>
           <div class="dome-fill"><i class="bubble"></i><i class="bubble"></i><i class="bubble"></i><i class="bubble"></i></div>
           <div class="dome-shine"></div>
         </div>
@@ -70,6 +70,25 @@
             <p>Every shot drains the tank. When it runs low, call the drone to pour in more Lumen. The tank beside this page does the same as you read.</p>
           </li>
         </ol>
+      </section>
+
+      <section class="worlds" id="worlds" aria-labelledby="worlds-h">
+        <h2 id="worlds-h">Eleven worlds</h2>
+        <p class="worlds-lede">Ten levels in each world, each with its own ground, sky and Siphons.</p>
+        <ul class="world-grid">
+          <li class="world world--lead"><figure><img src="../assets/img/worlds/w01.jpg" width="960" height="540" loading="lazy" alt="World 1, Red Desert: Siphons with amethyst crystals on a red sandstone canyon floor."><figcaption><span class="world-no">World 1</span><strong>Red Desert</strong><span>Chasm World</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w02.jpg" width="960" height="540" loading="lazy" alt="World 2, Fungal Sporelands: Mossy Siphons among glowing purple and teal mushrooms in a dark marsh."><figcaption><span class="world-no">World 2</span><strong>Fungal Sporelands</strong><span>Glowing Marsh</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w03.jpg" width="960" height="540" loading="lazy" alt="World 3, Overgrown Biosphere: Leafy green Siphons on bright jungle grass beside a brown road."><figcaption><span class="world-no">World 3</span><strong>Overgrown Biosphere</strong><span>Jungle Ruins</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w04.jpg" width="960" height="540" loading="lazy" alt="World 4, Neon Cyber-Scrap: Pink and magenta mech Siphons on silver-blue deck plates under a neon grid."><figcaption><span class="world-no">World 4</span><strong>Neon Cyber-Scrap</strong><span>Scrapyard Grid</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w05.jpg" width="960" height="540" loading="lazy" alt="World 5, Crystal-Capped Cavern: Dark crystal Siphons on lavender quartz beside a glowing cobalt river."><figcaption><span class="world-no">World 5</span><strong>Crystal-Capped Cavern</strong><span>Amethyst Deep</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w06.jpg" width="960" height="540" loading="lazy" alt="World 6, Toxic Coral Shoals: Spiky teal reef Siphons on sea sand among coral."><figcaption><span class="world-no">World 6</span><strong>Toxic Coral Shoals</strong><span>Poison Reef</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w07.jpg" width="960" height="540" loading="lazy" alt="World 7, Clockwork Steam-Spires: Brass clockwork Siphons on cobblestones."><figcaption><span class="world-no">World 7</span><strong>Clockwork Steam-Spires</strong><span>Sky Foundry</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w08.jpg" width="960" height="540" loading="lazy" alt="World 8, Volcanic Obsidian Rift: Fiery Siphons on black basalt cracked with glowing lava."><figcaption><span class="world-no">World 8</span><strong>Volcanic Obsidian Rift</strong><span>Magma Scar</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w09.jpg" width="960" height="540" loading="lazy" alt="World 9, Cosmic Meteor Crags: Silver orb Siphons on dark violet regolith."><figcaption><span class="world-no">World 9</span><strong>Cosmic Meteor Crags</strong><span>Starfall Rim</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w10.jpg" width="960" height="540" loading="lazy" alt="World 10, Withered Sands & Rust: Rusted machine Siphons on golden dunes."><figcaption><span class="world-no">World 10</span><strong>Withered Sands &amp; Rust</strong><span>Wreck Dunes</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w11.jpg" width="960" height="540" loading="lazy" alt="World 11, Aurora Icefields: A winding pale road across a pink plain ringed by orange rock pillars."><figcaption><span class="world-no">World 11</span><strong>Aurora Icefields</strong><span>The final world</span></figcaption></figure></li>
+        </ul>
+        <p class="worlds-note">Captures from the game in development.</p>
       </section>
 
       <section class="policies" aria-labelledby="pol-h">
