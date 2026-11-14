@@ -162,6 +162,14 @@ h1, h2, h3 { font-family: var(--font); font-weight: 700; line-height: 1.08; lett
 .btn:hover { background: var(--lumen-hi); color: var(--on-lumen); box-shadow: 0 0 24px rgba(47, 227, 207, 0.35); }
 .btn:active { transform: translateY(1px); }
 
+/* ── the story (game page) ───────────────────────────────── */
+.story h2 { font-size: clamp(1.9rem, 3.2vw, 2.7rem); margin-bottom: 18px; }
+.story p { max-width: 38rem; margin: 0 0 16px; }
+.story strong { color: var(--text); }
+.road-h { font-size: clamp(1.25rem, 2vw, 1.5rem); margin: 28px 0 14px; }
+.road { margin: 0 0 24px; padding: 0 0 0 1.4em; display: grid; gap: 10px; max-width: 38rem; }
+.road li::marker { color: var(--lumen); font-weight: 700; }
+
 /* ── how it plays ────────────────────────────────────────── */
 .how h2 { font-size: clamp(1.9rem, 3.2vw, 2.7rem); margin-bottom: 36px; }
 .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(44px, 6vw, 76px); }

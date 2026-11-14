@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1020">
   <title>Tintara: Tower Defense</title>
-  <meta name="description" content="Tintara: Tower Defense is a 3D tower defense game where every tower runs on Lumen, one glowing liquid from a shared glass tank. Coming to Android.">
+  <meta name="description" content="Tintara: Tower Defense is a 3D tower defense game. The Keepers turn Lumen, the living light of a world, into seven energies and fire them from towers to cure the Lumivores. Coming to Android.">
   <link rel="preload" href="../assets/fonts/Outfit.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/site.css">
   <script src="../assets/site.js" defer></script>
@@ -16,6 +16,7 @@
     <a class="brand" href="../"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#2fe3cf" stroke-width="2.5"/><path d="M16 7c4 5 6.5 8.4 6.5 11.5a6.5 6.5 0 0 1-13 0C9.5 15.4 12 12 16 7z" fill="#2fe3cf"/></svg>Roshelos gaming studio</a>
     <nav aria-label="Site">
       <a href="./" aria-current="page">Tintara</a>
+      <a href="#story">Story</a>
       <a href="#worlds">Worlds</a>
       <a href="privacy.html">Privacy policy</a>
       <a href="terms.html">Terms of service</a>
@@ -37,31 +38,49 @@
       <section class="hero">
         <h1 class="logo"><img src="../assets/img/logo.png" width="1024" height="384" alt="Tintara: Tower Defense"></h1>
         <p class="tagline">Towers that run on Lumen</p>
-        <p class="lede">A 3D tower defense game for Android. Jelly-and-glass aliens called Siphons march on your Main Building, and every tower runs on Lumen, the glowing liquid in one shared glass tank. Watch the tank drain.</p>
+        <p class="lede">A 3D tower defense game for Android. You are a Keeper, an inventor of light. Lumivores, creatures with Lumen fever, march on your Main Building, and every tower fires energy made from Lumen, the glowing liquid in one shared glass tank. Watch the tank drain.</p>
         <div class="actions">
           <div class="coin"><span class="slot" aria-hidden="true"></span><span><strong>Coming to Android</strong><small>Not released yet. No date announced.</small></span></div>
+          <a class="btn" href="#story">The story <svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <a class="btn" href="#how">How it plays <svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
+      </section>
+
+      <section class="story" id="story" aria-labelledby="story-h">
+        <h2 id="story-h">What Tintara is</h2>
+        <p>Every world glows with <strong>Lumen</strong>, the living light that runs beneath it. <strong>Vorax</strong>, a giant cosmic creature with no light of its own, is always thirsty for it. Through its portals Vorax drinks the worlds dim, and the creatures near the portals catch Lumen fever. They crave the glow and march toward the brightest Lumen they can find. These are the <strong>Lumivores</strong>.</p>
+        <p>You are one of the <strong>Keepers</strong>, inventors from Tintara, a world Vorax has already drained dim. You land a Main Building on each world, bring Lumen home from a spring with your drone, turn it into seven kinds of energy and fire it from towers. A hit breaks the fever and the Lumivore pops, cured. Beat a world's boss and its portals close, and the world glows again.</p>
+        <h3 class="road-h">The road Lumen takes</h3>
+        <ol class="road">
+          <li><strong>Spring.</strong> Lumen wells up at the edge of the map.</li>
+          <li><strong>Drone.</strong> It flies there and carries Lumen home.</li>
+          <li><strong>Tank.</strong> It pours into the glass tank on the Main Building. An empty tank means silent towers.</li>
+          <li><strong>Chambers.</strong> Seven glass chambers shape raw Lumen into seven energies: Burn, Shock, Freeze, Splash, Pierce, Acid and Pull.</li>
+          <li><strong>Pipes.</strong> A glowing pipe runs from the chambers to every tower.</li>
+          <li><strong>Towers.</strong> A tower gathers one shot of energy and fires it.</li>
+          <li><strong>Lumivores.</strong> A hit breaks the fever, and the Lumivore pops, cured.</li>
+        </ol>
+        <p>The same page is in the game: Settings, About, "How Tintara works".</p>
       </section>
 
       <section class="how" id="how" aria-labelledby="how-h">
         <h2 id="how-h">How it plays</h2>
         <ol class="steps">
           <li class="step step--wide" data-drain-from>
-            <h3>Siphons march on your Main Building</h3>
-            <p>They are translucent aliens that crave raw Lumen, and they walk the path straight toward the Main Building.</p>
-            <figure class="window"><span class="no" aria-hidden="true">1</span><img src="../assets/img/siphons.jpg" width="1400" height="788" loading="lazy" alt="Siphons, among them a crab, a toad, a moth and an armoured bear, standing on a sandy path in a canyon."><figcaption>Siphons, from a Level 1 capture.</figcaption></figure>
+            <h3>Lumivores march on your Main Building</h3>
+            <p>They crave raw Lumen, and they walk the path straight toward the Main Building.</p>
+            <figure class="window"><span class="no" aria-hidden="true">1</span><img src="../assets/img/lumivores.jpg" width="1400" height="788" loading="lazy" alt="Lumivores, among them a crab, a toad, a moth and an armoured bear, standing on a sandy path in a canyon."><figcaption>Lumivores, from a Level 1 capture.</figcaption></figure>
           </li>
           <li class="step step--side">
             <figure class="window"><span class="no" aria-hidden="true">2</span><img src="../assets/img/building.jpg" width="380" height="380" loading="lazy" alt="The Main Building: a stone and metal block with a glass tank of Lumen on top."><figcaption>The Main Building and its glass tank.</figcaption></figure>
             <div>
               <h3>One tank feeds every tower</h3>
-              <p>The Main Building holds the Lumen and converts it into the energy each gun fires. Nothing fires without it.</p>
+              <p>The Main Building holds the Lumen and converts it into the energy each tower fires. Nothing fires without it.</p>
             </div>
           </li>
           <li class="step step--wide">
             <h3>Mix energies</h3>
-            <p>Each tower has its own pipe from the Main Building and carries one energy. Mix energies to burn, freeze and shock the Siphons.</p>
+            <p>Each tower has its own pipe from the Main Building and fires one energy. Mix energies to burn, freeze and shock the Lumivores.</p>
             <figure class="window"><span class="no" aria-hidden="true">3</span><img src="../assets/img/map.jpg" width="1400" height="788" loading="lazy" alt="A Level 1 map from above: a winding sand path, build pads, and coloured pipes running from the Main Building."><figcaption>Level 1: the path, the build pads and each tower's pipe.</figcaption></figure>
           </li>
           <li class="step step--drone" data-drain-to>
@@ -74,18 +93,18 @@
 
       <section class="worlds" id="worlds" aria-labelledby="worlds-h">
         <h2 id="worlds-h">Eleven worlds</h2>
-        <p class="worlds-lede">Ten levels in each world, each with its own ground, sky and Siphons.</p>
+        <p class="worlds-lede">Ten levels in each world, each with its own ground, sky, Lumivores, World Hazard and boss. A twelfth world, the Pantry, where Vorax keeps everything it drank, is still to come.</p>
         <ul class="world-grid">
-          <li class="world world--lead"><figure><img src="../assets/img/worlds/w01.jpg" width="960" height="540" loading="lazy" alt="World 1, Red Desert: Siphons with amethyst crystals on a red sandstone canyon floor."><figcaption><span class="world-no">World 1</span><strong>Red Desert</strong><span>Chasm World</span></figcaption></figure></li>
-          <li class="world"><figure><img src="../assets/img/worlds/w02.jpg" width="960" height="540" loading="lazy" alt="World 2, Fungal Sporelands: Mossy Siphons among glowing purple and teal mushrooms in a dark marsh."><figcaption><span class="world-no">World 2</span><strong>Fungal Sporelands</strong><span>Glowing Marsh</span></figcaption></figure></li>
-          <li class="world"><figure><img src="../assets/img/worlds/w03.jpg" width="960" height="540" loading="lazy" alt="World 3, Overgrown Biosphere: Leafy green Siphons on bright jungle grass beside a brown road."><figcaption><span class="world-no">World 3</span><strong>Overgrown Biosphere</strong><span>Jungle Ruins</span></figcaption></figure></li>
-          <li class="world"><figure><img src="../assets/img/worlds/w04.jpg" width="960" height="540" loading="lazy" alt="World 4, Neon Cyber-Scrap: Pink and magenta mech Siphons on silver-blue deck plates under a neon grid."><figcaption><span class="world-no">World 4</span><strong>Neon Cyber-Scrap</strong><span>Scrapyard Grid</span></figcaption></figure></li>
-          <li class="world"><figure><img src="../assets/img/worlds/w05.jpg" width="960" height="540" loading="lazy" alt="World 5, Crystal-Capped Cavern: Dark crystal Siphons on lavender quartz beside a glowing cobalt river."><figcaption><span class="world-no">World 5</span><strong>Crystal-Capped Cavern</strong><span>Amethyst Deep</span></figcaption></figure></li>
-          <li class="world"><figure><img src="../assets/img/worlds/w06.jpg" width="960" height="540" loading="lazy" alt="World 6, Toxic Coral Shoals: Spiky teal reef Siphons on sea sand among coral."><figcaption><span class="world-no">World 6</span><strong>Toxic Coral Shoals</strong><span>Poison Reef</span></figcaption></figure></li>
-          <li class="world"><figure><img src="../assets/img/worlds/w07.jpg" width="960" height="540" loading="lazy" alt="World 7, Clockwork Steam-Spires: Brass clockwork Siphons on cobblestones."><figcaption><span class="world-no">World 7</span><strong>Clockwork Steam-Spires</strong><span>Sky Foundry</span></figcaption></figure></li>
-          <li class="world"><figure><img src="../assets/img/worlds/w08.jpg" width="960" height="540" loading="lazy" alt="World 8, Volcanic Obsidian Rift: Fiery Siphons on black basalt cracked with glowing lava."><figcaption><span class="world-no">World 8</span><strong>Volcanic Obsidian Rift</strong><span>Magma Scar</span></figcaption></figure></li>
-          <li class="world"><figure><img src="../assets/img/worlds/w09.jpg" width="960" height="540" loading="lazy" alt="World 9, Cosmic Meteor Crags: Silver orb Siphons on dark violet regolith."><figcaption><span class="world-no">World 9</span><strong>Cosmic Meteor Crags</strong><span>Starfall Rim</span></figcaption></figure></li>
-          <li class="world"><figure><img src="../assets/img/worlds/w10.jpg" width="960" height="540" loading="lazy" alt="World 10, Withered Sands & Rust: Rusted machine Siphons on golden dunes."><figcaption><span class="world-no">World 10</span><strong>Withered Sands &amp; Rust</strong><span>Wreck Dunes</span></figcaption></figure></li>
+          <li class="world world--lead"><figure><img src="../assets/img/worlds/w01.jpg" width="960" height="540" loading="lazy" alt="World 1, Red Desert: Lumivores with amethyst crystals on a red sandstone canyon floor."><figcaption><span class="world-no">World 1</span><strong>Red Desert</strong><span>Chasm World</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w02.jpg" width="960" height="540" loading="lazy" alt="World 2, Fungal Sporelands: Mossy Lumivores among glowing purple and teal mushrooms in a dark marsh."><figcaption><span class="world-no">World 2</span><strong>Fungal Sporelands</strong><span>Glowing Marsh</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w03.jpg" width="960" height="540" loading="lazy" alt="World 3, Overgrown Biosphere: Leafy green Lumivores on bright jungle grass beside a brown road."><figcaption><span class="world-no">World 3</span><strong>Overgrown Biosphere</strong><span>Jungle Ruins</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w04.jpg" width="960" height="540" loading="lazy" alt="World 4, Neon Cyber-Scrap: Pink and magenta mech Lumivores on silver-blue deck plates under a neon grid."><figcaption><span class="world-no">World 4</span><strong>Neon Cyber-Scrap</strong><span>Scrapyard Grid</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w05.jpg" width="960" height="540" loading="lazy" alt="World 5, Crystal-Capped Cavern: Dark crystal Lumivores on lavender quartz beside a glowing cobalt river."><figcaption><span class="world-no">World 5</span><strong>Crystal-Capped Cavern</strong><span>Amethyst Deep</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w06.jpg" width="960" height="540" loading="lazy" alt="World 6, Toxic Coral Shoals: Spiky teal reef Lumivores on sea sand among coral."><figcaption><span class="world-no">World 6</span><strong>Toxic Coral Shoals</strong><span>Poison Reef</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w07.jpg" width="960" height="540" loading="lazy" alt="World 7, Clockwork Steam-Spires: Brass clockwork Lumivores on cobblestones."><figcaption><span class="world-no">World 7</span><strong>Clockwork Steam-Spires</strong><span>Sky Foundry</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w08.jpg" width="960" height="540" loading="lazy" alt="World 8, Volcanic Obsidian Rift: Fiery Lumivores on black basalt cracked with glowing lava."><figcaption><span class="world-no">World 8</span><strong>Volcanic Obsidian Rift</strong><span>Magma Scar</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w09.jpg" width="960" height="540" loading="lazy" alt="World 9, Cosmic Meteor Crags: Silver orb Lumivores on dark violet regolith."><figcaption><span class="world-no">World 9</span><strong>Cosmic Meteor Crags</strong><span>Starfall Rim</span></figcaption></figure></li>
+          <li class="world"><figure><img src="../assets/img/worlds/w10.jpg" width="960" height="540" loading="lazy" alt="World 10, Withered Sands & Rust: Rusted machine Lumivores on golden dunes."><figcaption><span class="world-no">World 10</span><strong>Withered Sands &amp; Rust</strong><span>Wreck Dunes</span></figcaption></figure></li>
           <li class="world"><figure><img src="../assets/img/worlds/w11.jpg" width="960" height="540" loading="lazy" alt="World 11, Aurora Icefields: A winding pale road across a pink plain ringed by orange rock pillars."><figcaption><span class="world-no">World 11</span><strong>Aurora Icefields</strong><span>The final world</span></figcaption></figure></li>
         </ul>
         <p class="worlds-note">Captures from the game in development.</p>
